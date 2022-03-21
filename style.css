@@ -3,8 +3,24 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.parallax {
+  /* The image used */
+  background-image: url("https://www.hdcarwallpapers.com/walls/bmw_m4_4k-HD.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+  background-color: linear-gradient(74deg, rgba(0,0,0,1) 0%, rgba(88,88,88,1) 13%, rgba(0,0,0,0) 100%);
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: fill;
+}
+
 .topnav {
-  background-color: #333;
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgb(41, 41, 41) 100%);
   overflow: hidden;
 }
 
@@ -12,7 +28,40 @@ body {
   float: left;
   color: #aa3904;
   font-weight: bold;
+  
 }
+.centerfix {
+  padding: 5vh 5vh 5vh 5vh;
+  content: "";
+  clear: both;
+  display: table;
+}
+.rightShift {
+padding-left: 20vh;
+}
+.leftShift {
+  padding-right: 20vh;
+  }
+.introT {
+  background-color: rgba(0, 0, 0, 0.575);
+  width: 40%;
+  margin: 20vh auto auto auto;
+  width: 50%;
+  padding: 2vh 5vh 5vh 5vh;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.555) 0%, rgba(58, 58, 58, 0.555) 100%);
+  border-radius: 1vh;
+
+}
+.introT h4 {
+  color: honeydew;
+  font-weight: normal;
+}
+.introT h2 {
+  color: rgb(255, 113, 88);
+  font-weight: bolder;
+}
+
 .topnav a {
     float: right;
     display: block;
