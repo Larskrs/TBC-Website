@@ -18,7 +18,8 @@ body {
 }
 #slide2 {
   background-image: url("img/specs.jpg");
-  background-size: cover
+  background-size: cover;
+  height: auto;
 }
 .parallax {
   /* The image used */
