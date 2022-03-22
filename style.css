@@ -8,6 +8,10 @@ body {
   padding: 0px;
   overflow-x: hidden; 
 }
+.wrapper:hover #info {
+  transition: 1s;
+  left: 2vh;
+}
 #slide1 {
   background-image: url("img/front.jpg");
   background-size: contain
@@ -29,10 +33,61 @@ body {
   background-repeat: no-repeat;
   background-size: fill;
 }
+@-webkit-keyframes slideIn {
+  0% {
+    transform: translateX(-900px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@-moz-keyframes slideIn {
+  0% {
+    transform: translateX(-900px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideIn {
+  0% {
+    transform: translateX(-900px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 
 .topnav {
   background: rgb(255, 255, 255);
   overflow: hidden;
+}
+.gray-box-parent {
+  background-color: rgb(65, 83, 51);
+  border-width: thick;
+  border-color: rgb(110, 110, 110);
+  padding: 5vh 5vh 5vh 5vh;
+}
+.gray-box-parent h2 {
+  color: white;
+}
+.gray-box-parent h4 {
+  color:rgb(212, 212, 212)
+}
+.horizontal-parent {
+  display: inline-flex;
+  text-align: center;
+  
+}
+.horizontal-child {
+  padding-right: 2vh;
+  text-align: initial;
+}
+#en-bil-for-alle-bilde {
+  background-image: url('img/enbilforalle.jpg');  
+  background-color: #aa3904;
+  width: auto;
+  height: auto;
 }
 
 #logo {
@@ -41,9 +96,17 @@ body {
   font-weight: bold;
   
 }
-#HyperDrive {
-  background-image: url("img/hyperdrive.jpg");
-  background-size: auto
+.img-desc {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+
+  width: 40vh;
+  height: 20vh;
+
+  border-color: #0468aa;
+  border-width: thick;
+  border-radius: 1vh;
 }
 .centerfix {
   padding: 5vh 5vh 5vh 5vh;
@@ -61,14 +124,24 @@ padding-left: 20vh;
 #info {
   width: 80%;
   background-color: rgb(255, 255, 255);
+  -webkit-animation: slideIn 1s forwards;
+  -moz-animation: slideIn 1s forwards;
+  animation: slideIn 1s forwards;
 }
 .introT {
+  overflow: hidden;
   background-color: rgb(245, 245, 245);
   width: 35%;
   margin: 10vh auto 10vh auto;
   padding: 2vh 5vh 5vh 5vh;
   border-radius: 1vh;
-
+  
+}
+.introT div {
+  display: inline-block;
+  border: 1px solid red;
+  padding: 1rem 1rem;
+  vertical-align: middle;
 }
 .introT h4 {
   color: rgb(0, 0, 0);
