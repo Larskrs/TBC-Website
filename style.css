@@ -4,7 +4,6 @@ body {
   width: 100%;
   height: 100%;
   margin: 0px;
-  margin-top: -3.4vh;
   padding: 0px;
   overflow-x: hidden; 
 }
@@ -18,8 +17,8 @@ body {
 }
 #slide2 {
   background-image: url("img/specs.jpg");
-  background-size: cover;
-  height: auto;
+  background-size: auto;
+  width:fit-content;
 }
 .parallax {
 
@@ -90,12 +89,13 @@ body {
   -webkit-animation: slideDown 1s forwards;
   -moz-animation: slideDown 1s forwards;
   animation: slideDown 1s forwards;
+  z-index: 0;
+  transition: all 2s;
 }
 .gray-box-parent {
   background-color: rgb(51, 73, 83);
   border-width: thick;
   border-color: rgb(110, 110, 110);
-  padding: 5vh 5vh 5vh 5vh;
 }
 .gray-box-parent h2 {
   color: white;
@@ -129,6 +129,14 @@ body {
   border-width: thick;
   border-radius: 1vh;
   text-align: center;
+
+  
+}
+
+video {
+  transition: all cubic-bezier(0,1.01,.12,1) 1s;
+  box-shadow: 0px 5px  #ebebeb;;
+  
 }
 .centerfix {
   padding: 5vh 5vh 5vh 5vh;
@@ -136,12 +144,14 @@ body {
   clear: both;
   display: table;
   margin:auto;
+  
 }
 .sidefix {
   padding: 5vh 5vh 5vh 5vh;
   content: "";
   clear: both;
   display: table;
+  
 }
 .rightShift {
 padding-left: 20vh;
@@ -161,19 +171,20 @@ padding-left: 20vh;
 .introT {
   overflow: hidden;
   background-color: rgb(255, 255, 255);
-  width: 80%;
+  width: 100%;
   margin: 10vh auto 10vh auto;
-  padding: 2vh 5vh 5vh 5vh;
-  -webkit-animation: slideIn 1s forwards;
-  -moz-animation: slideIn 1s forwards;
-  animation: slideIn 1s forwards;
+  padding: 0vh 3vh 3vh 3vh;
   text-align: center;
-  height: 60vh;
+  height: auto;
   transition: all cubic-bezier(0,1.01,.12,1) 1s;
   box-shadow: 0px 20px  #ebebeb;;
   border-color: #ebebeb;
   border-width: thin;
   border-style: solid;
+  -webkit-animation: slideDown .5s forwards;
+  -moz-animation: slideDown .5s forwards;
+  animation: slideDown .5s forwards;
+  z-index: 0;
 }
 .introT h4 {
   color: rgb(0, 0, 0);
@@ -192,36 +203,37 @@ padding-left: 20vh;
     display: block;
     color: hsl(199, 95%, 34%);
     text-align: center;
-    padding: 14px 16px;
+    padding: 16px 20px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 24px;
   }
   /* Style the links inside the navigation bar */
   
   /* Change the color of links on hover */
   .topnav a:hover {
-    background-color: rgb(62, 135, 163);
+    background-color: rgb(163, 77, 62);
     color: black;
   }
   .introT:hover {
-    width: 80%;
     transition: all cubic-bezier(0,1.01,.12,1) 1s;
-    box-shadow: 0px 20px  #125391;
+    box-shadow: 0px 20px  #912112;
     border-color: #ebebeb;
     border-width: thin;
     border-style: solid;
+    padding: 0vh 3vh 2vh 3vh;
   }
   
   
   /* Add an active class to highlight the current page */
   .topnav a.active {
-    background-color: hsl(199, 95%, 34%);
-    color: white;
+    background-color: hsl(0, 95%, 34%);
+    color: rgb(255, 255, 255);
   }
   
   /* Hide the link that should open and close the topnav on small screens */
   .topnav .icon {
     display: none;
+    background-color: hsl(0, 95%, 34%)
   }
   @media only screen and (min-width: 768px)  {
     .horizontal-parent {
@@ -245,6 +257,13 @@ padding-left: 20vh;
     .topnav a.icon {
       float: right;
       display: block;
+      color: white;
+    }
+    .topnav .active {
+      display: none;
+    }
+    .topnav {
+      z-index: 9;
     }
   }
   

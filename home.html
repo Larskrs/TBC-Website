@@ -32,12 +32,7 @@
               <h4> 720 hp HPEM™ <br> 420kw/h ARC™ reactor <br> 1250 mil rekkevidde <br> 350 km/t maks fart</h4>
               <h4> Trykk <a href="bmw.no">Her</a> for å se nærmeste forhandler.</h4>
             </div>
-          </div>
-          <div class="horizontal-child">
-              <video width="480" height="240" controls>
-                <source src="movies/BAMBLE UNGDOMSSKOLE.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-              </video> 
+            
           </div>
         </div>
           
@@ -48,19 +43,21 @@
       <div id="Specs" class="gray-box-parent">
         <div>
           <div class="horizontal-parent">
-
-            
-            <div class="horizontal-child">
-              <div class="img-desc" href="home.html" style="background-image: url('img/enbilforalle.jpg'); float: right;"></div>
-          </div>
+          <div class="horizontal-child">
+            <video width="480" height="270" controls>
+              <source src="movies/BAMBLE UNGDOMSSKOLE.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video> 
+        </div>
+                <div>
+                  <h2>joe</h2>
+                </div>
           </div>
         </div>
     </div>
     <div class="parallax" id="slide2"> 
       <div class="centerfix">
-
         <div class="horizontal-parent">
-          
           <div class="horizontal-child" style="width: 100%;">
             <div class="introT">
               <div class="img-desc" id="HyperDrive" style="background-image: url('img/hyperdrive.jpg'); width: 100%;"></div>
@@ -99,10 +96,6 @@
               <h2>Video</h2>
               <h4>Versatile er vår nye model skapt for å la alle kjøre med sin egen stil. </h4>
           </div>
-          
-          <div class="horizontal-child">
-            <div class="img-desc" href="home.html" style="background-image: url('img/enbilforalle.jpg'); float: right;"></div>
-        </div>
         </div>
       </div>
   </div>
@@ -116,9 +109,13 @@
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
     x.className += " responsive";
+    x.style.animation = "slideDown 1s forwards;"
   } else {
     x.className = "topnav";
+    x.style.animation = "slideDown 1s forwards;"
   }
 } 
+
+
 </script>
 
