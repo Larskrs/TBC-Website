@@ -1,0 +1,35 @@
+.selectable {
+    box-shadow: 0px 20px  #e0e0e0;;
+    border-color: #e0e0e0;
+    border-width: thin;
+    border-style: solid;
+    transition: all cubic-bezier(0,1.01,.12,1) 1s;
+    -webkit-animation: slideDown .5s forwards;
+    -moz-animation: slideDown .5s forwards;
+    animation: slideDown .5s forwards;
+    z-index: 0;
+  }
+  .selectable:hover {
+    transition: all cubic-bezier(0,1.01,.12,1) 1s;
+    box-shadow: 0px 20px  #912112;
+    border-color: #ebebeb;
+    border-width: thick;
+    border-style: solid;
+    padding: 0vh 3vh 2vh 3vh;
+  }
+  .blue:hover {
+    transition: all cubic-bezier(0,1.01,.12,1) 1s;
+    box-shadow: 0px 20px  #124591;
+  }
+  .yellow:hover {
+    transition: all cubic-bezier(0,1.01,.12,1) 1s;
+    box-shadow: 0px 20px  rgb(233, 209, 73);
+  }
+  .purple:hover {
+    transition: all cubic-bezier(0,1.01,.12,1) 1s;
+    box-shadow: 0px 20px rgb(172, 100, 255);
+  }
+  .green:hover {
+    transition: all cubic-bezier(0,1.01,.12,1) 1s;
+    box-shadow: 0px 20px rgb(119, 187, 119);
+  }
